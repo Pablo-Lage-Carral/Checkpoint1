@@ -9,9 +9,20 @@ namespace Checkpoint1.Models
 {
     public class Animais
     {
-        protected string nome;
+        private string nome;
         private int idade;
         private Boolean classe;
+        private string ruido;
+
+        public void setRuido(String novoRuido)
+        {
+            ruido = novoRuido;
+        }
+        public string getRuido()
+        {
+            return ruido;
+
+        }
 
         public void setNome(String novoNome) 
         {

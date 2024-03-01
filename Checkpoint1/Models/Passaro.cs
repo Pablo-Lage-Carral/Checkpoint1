@@ -6,11 +6,24 @@ using System.Threading.Tasks;
 
 namespace Checkpoint1.Models
 {
-    internal class Passaro : Animais
+    public class Passaro : Animais
     {
+        private double tamanhoAsa;
         public Passaro()
         {
-            setClasse(true);
+            Console.WriteLine("Esta é a descrição do Passaro:");
         }
+
+
+        public Passaro(string nome, int idade, Boolean classe, string ruido, double tamanhoAsa)
+        {
+            Console.WriteLine("Nome: " + nome);
+            Console.WriteLine("Idade: " + idade);
+            Console.WriteLine("Classe: " + classe);
+            Console.WriteLine("Ruido: " + ruido);
+            Console.WriteLine("Tamanho da asa: " + tamanhoAsa +"cm");
+        }
+
+
     }
 }

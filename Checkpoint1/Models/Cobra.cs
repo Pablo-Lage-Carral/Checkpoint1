@@ -6,16 +6,25 @@ using System.Threading.Tasks;
 
 namespace Checkpoint1.Models
 {
-    internal class Cobra : Animais
+    public class Cobra : Animais
     {
-        private string ruido;
+        private string tipoVeneno;
+
 
         public Cobra()
         {
-            setClasse(false);
+            Console.WriteLine("Esta é a descrição da Cobra:");
         }
 
 
+        public Cobra(string nome, int idade, Boolean classe, string ruido, string tipoVeneno)
+        {
+            Console.WriteLine("Nome: " + nome);
+            Console.WriteLine("Idade: " + idade);
+            Console.WriteLine("Classe: " + classe);
+            Console.WriteLine("Ruido: " + ruido);
+            Console.WriteLine("Tipo de veneno da cobra: " + tipoVeneno);
+        }
 
     }
 }

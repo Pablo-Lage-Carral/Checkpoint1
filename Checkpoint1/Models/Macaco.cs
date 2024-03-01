@@ -8,29 +8,23 @@ namespace Checkpoint1.Models
 {
     public class Macaco : Animais
     {
-        private string ruido;
+        private int quantidadeBananas;
 
         public Macaco()
         {
-            setClasse(true);
+            Console.WriteLine("Esta é a descrição do Macaco:");
         }
 
-
-        public void RuidoMacaco()
+        public Macaco(string nome, int idade, Boolean classe, string ruido, int quantidadeBananas) 
         {
-            ruido = "Uh Uh Ah Ah";
-            Console.WriteLine(ruido);
+            Console.WriteLine("Nome: " + nome);
+            Console.WriteLine("Idade: " + idade);
+            Console.WriteLine("Classe: " + classe);
+            Console.WriteLine("Ruido: " + ruido);
+            Console.WriteLine("Quantidade de bananas na gaiola: ");
         }
 
-        public void NomeMacaco()
-        {
-            Console.WriteLine("Pedrinho");
-        }
 
-        public void DescricaoMacaco()
-        {
-            Console.WriteLine("O macaco pula de galho em galho de árvore em árovre");
-        }
 
 
     }
